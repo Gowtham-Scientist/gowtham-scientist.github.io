@@ -12,7 +12,7 @@ After GitHub Pages is enabled, the site will be available at:
 
 - Professional experience and evidence-led case studies
 - Responsive, accessible single-page design
-- Downloadable résumé and direct recruiter contact links
+- Downloadable résumé with direct LinkedIn and recruiter contact links
 - Static HTML and CSS with no framework or server dependency
 - Optimized for GitHub Pages deployment
 
