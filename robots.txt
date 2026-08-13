@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gowtham-scientist.github.io/sitemap.xml
+Sitemap: https://gowthamkondabolu.github.io/sitemap.xml

@@ -4,24 +4,22 @@ My personal portfolio showcasing production machine learning, predictive systems
 
 ## Live site
 
-After GitHub Pages is enabled, the site will be available at:
-
-**https://gowtham-scientist.github.io/**
+**https://gowthamkondabolu.github.io/**
 
 ## Highlights
 
+- Figma-inspired, recruiter-focused visual design
 - Professional experience and evidence-led case studies
-- Responsive, accessible single-page design
+- Responsive and accessible single-page experience
 - Downloadable résumé with direct LinkedIn and recruiter contact links
-- Static HTML and CSS with no framework or server dependency
-- Optimized for GitHub Pages deployment
+- Static HTML and CSS optimized for GitHub Pages
 
 ## Technology
 
 - Semantic HTML5
 - Modern responsive CSS
 - GitHub Pages
-- Google Fonts (Space Grotesk and IBM Plex Mono)
+- Google Fonts: Space Grotesk and IBM Plex Mono
 
 ## Run locally
 
