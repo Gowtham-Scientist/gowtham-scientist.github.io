@@ -171,6 +171,11 @@ h1 em:after { content: ""; position: absolute; left: 2%; right: -1%; bottom: -2p
 .result-row b { color: var(--ink); font-size: 12px; }
 .tech-row { display: flex; flex-wrap: wrap; gap: 6px; }
 .tech-row span { padding: 7px 9px; border-radius: 6px; background: #f0eff6; color: #626170; font: 8px var(--font-mono), monospace; }
+.project-actions { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+.project-link { min-height: 42px; padding: 0 15px; display: inline-flex; flex: 1 1 145px; align-items: center; justify-content: center; gap: 9px; border: 1px solid var(--ink); border-radius: 9px; background: white; color: var(--ink); font: 700 9px var(--font-mono), monospace; letter-spacing: .04em; text-transform: uppercase; transition: transform .2s, box-shadow .2s, background .2s; }
+.project-link:hover { transform: translateY(-2px); box-shadow: 0 9px 20px rgba(29, 27, 52, .12); }
+.project-link.primary { background: var(--ink); color: white; }
+.project-link.primary span { color: var(--yellow); }
 .finance-visual { background-color: var(--orange-soft); }
 .donut { width: 150px; height: 150px; position: absolute; left: 9%; top: 92px; display: flex; align-items: center; justify-content: center; flex-direction: column; border: 25px solid rgba(255, 107, 69, .24); border-right-color: var(--orange); border-top-color: var(--orange); border-radius: 50%; transform: rotate(-25deg); }
 .donut b, .donut span { transform: rotate(25deg); }.donut b { font-size: 30px; }.donut span { color: var(--muted); font-size: 8px; }
