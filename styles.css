@@ -176,16 +176,6 @@ h1 em:after { content: ""; position: absolute; left: 2%; right: -1%; bottom: -2p
 .project-link:hover { transform: translateY(-2px); box-shadow: 0 9px 20px rgba(29, 27, 52, .12); }
 .project-link.primary { background: var(--ink); color: white; }
 .project-link.primary span { color: var(--yellow); }
-.finance-visual { background-color: var(--orange-soft); }
-.donut { width: 150px; height: 150px; position: absolute; left: 9%; top: 92px; display: flex; align-items: center; justify-content: center; flex-direction: column; border: 25px solid rgba(255, 107, 69, .24); border-right-color: var(--orange); border-top-color: var(--orange); border-radius: 50%; transform: rotate(-25deg); }
-.donut b, .donut span { transform: rotate(25deg); }.donut b { font-size: 30px; }.donut span { color: var(--muted); font-size: 8px; }
-.bar-field { height: 170px; position: absolute; right: 8%; bottom: 30px; display: flex; align-items: flex-end; gap: 8px; }
-.bar-field i { width: 18px; border-radius: 5px 5px 0 0; background: rgba(255, 107, 69, .33); }.bar-field i:nth-child(1) { height: 22%; }.bar-field i:nth-child(2) { height: 35%; }.bar-field i:nth-child(3) { height: 52%; }.bar-field i:nth-child(4) { height: 68%; }.bar-field i:nth-child(5) { height: 81%; }.bar-field i:nth-child(6) { height: 100%; background: var(--orange); }
-.banking-visual { background-color: var(--blue-soft); }
-.report-count { position: absolute; top: 95px; left: 10%; display: flex; align-items: center; gap: 13px; }.report-count b { color: var(--blue); font-size: 55px; letter-spacing: -.06em; }.report-count span { font: 8px/1.5 var(--font-mono), monospace; }
-.report-table { width: 45%; height: 132px; position: absolute; right: 8%; bottom: 31px; display: grid; grid-template-rows: repeat(4, 1fr); border: 1px solid var(--blue); border-radius: 10px; background: white; overflow: hidden; box-shadow: 9px 9px 0 rgba(37, 135, 248, .18); }.report-table i { border-bottom: 1px solid #cbdcf1; background: linear-gradient(90deg, #88bffc 21%, transparent 21% 25%, #d8e8fa 25% 58%, transparent 58% 62%, #d8e8fa 62% 85%, transparent 85%); }.report-table i:last-child { border: 0; }
-.compact-copy { padding: 32px; }.compact-copy h3 { margin-top: 20px; font-size: clamp(27px, 2.7vw, 37px); }.compact-copy .tech-row { margin-top: 25px; }
-
 .finsight-card { border-color: #c9d8e8; }
 .finsight-visual { background-color: #dff4ef; background-image: linear-gradient(rgba(12, 75, 72, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(12, 75, 72, .05) 1px, transparent 1px); background-size: 24px 24px; }
 .finsight-flow { position: absolute; inset: 88px 7% 108px; }
@@ -314,7 +304,7 @@ footer .kicker { color: rgba(255, 255, 255, .7); }
   .canvas-card { width: 100%; }.canvas-body { height: 420px; }.flow-node { width: 125px; }.data-node { left: 5%; }.model-node { left: 33%; top: 175px; }.api-node { right: 4%; }.line-one { left: 27%; }.performance-card { width: 54%; left: 5%; }.cursor-tag { right: 6%; }
   .impact-strip { grid-template-columns: 1fr 1fr; }.impact-card { min-height: 142px; padding: 16px; }.impact-card b { margin-top: 22px; font-size: 31px; }.impact-card p { font-size: 10px; }
   .section, .experience-section { padding: 90px 0; }.section-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 40px; }.section-heading h2, .about-card h2 { font-size: 43px; }.section-heading > p { max-width: 540px; }
-  .project-grid { grid-template-columns: 1fr; }.project-featured { grid-column: auto; }.project-visual, .project-featured .project-visual { min-height: 335px; }.data-stack { left: 6%; top: 90px; transform: scale(.85); transform-origin: left top; }.model-chip { top: 165px; }.api-chip { right: 5%; top: 82px; }.connector { top: 133px; }.project-copy { padding: 28px; }.project-copy h3 { font-size: 32px; }.compact-copy h3 { font-size: 29px; }.finance-visual, .banking-visual { min-height: 290px; }.donut { width: 125px; height: 125px; left: 7%; top: 88px; border-width: 21px; }.bar-field { height: 140px; }.report-count { top: 86px; }.report-count b { font-size: 45px; }.report-table { height: 110px; }
+  .project-grid { grid-template-columns: 1fr; }.project-featured { grid-column: auto; }.project-visual, .project-featured .project-visual { min-height: 335px; }.data-stack { left: 6%; top: 90px; transform: scale(.85); transform-origin: left top; }.model-chip { top: 165px; }.api-chip { right: 5%; top: 82px; }.connector { top: 133px; }.project-copy { padding: 28px; }.project-copy h3 { font-size: 32px; }
   .finsight-flow { inset: 76px 5% 105px; }.finsight-node { width: 110px; min-height: 90px; padding: 11px; }.finsight-node b { font-size: 13px; }.retrieval-node { top: 68px; }.finsight-controls { left: 4%; right: 4%; bottom: 50px; }.finsight-controls span { padding: 7px; font-size: 6px; }
   .case-hero { padding: 70px 0 60px; gap: 52px; }.case-hero h1 { font-size: clamp(50px, 14vw, 72px); }.case-status-note { flex-direction: column; }.case-system { width: 100%; min-height: 510px; }
   .case-section { padding: 85px 0; }.case-grid { grid-template-columns: 1fr; }.case-grid .case-card:last-child { grid-column: auto; }.case-card { min-height: auto; }
@@ -327,7 +317,7 @@ footer .kicker { color: rgba(255, 255, 255, .7); }
 }
 
 @media (max-width: 430px) {
-  .button { width: 100%; }.canvas-body { height: 390px; }.flow-node { width: 112px; padding: 10px; }.flow-node strong { font-size: 10px; }.model-node { left: 31%; }.performance-card { width: 58%; }.cursor-tag { bottom: 48px; }.impact-card > i { width: 25px; height: 25px; }.impact-card p { max-width: 90px; }.project-featured .project-visual { min-height: 310px; }.model-chip { left: 53%; transform: translateX(-50%) scale(.85); }.api-chip { transform: scale(.82); transform-origin: right top; }.connector { right: 18%; }.report-table { width: 39%; }.footer-title h2 { font-size: 48px; }
+  .button { width: 100%; }.canvas-body { height: 390px; }.flow-node { width: 112px; }.flow-node strong { font-size: 10px; }.model-node { left: 31%; }.performance-card { width: 58%; }.cursor-tag { bottom: 48px; }.impact-card > i { width: 25px; height: 25px; }.impact-card p { max-width: 90px; }.project-featured .project-visual { min-height: 310px; }.model-chip { left: 53%; transform: translateX(-50%) scale(.85); }.api-chip { transform: scale(.82); transform-origin: right top; }.connector { right: 18%; }.footer-title h2 { font-size: 48px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
