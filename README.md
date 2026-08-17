@@ -10,6 +10,7 @@ My personal portfolio showcasing production machine learning, predictive systems
 
 - Figma-inspired, recruiter-focused visual design
 - Professional experience and evidence-led case studies
+- Dedicated FinSight AI case study with architecture, safety controls, and pre-deployment AWS status
 - Responsive and accessible single-page experience
 - Downloadable résumé with direct LinkedIn and recruiter contact links
 - Static HTML and CSS optimized for GitHub Pages

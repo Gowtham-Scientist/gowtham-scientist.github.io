@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FinSight AI case study: evidence-grounded financial-risk investigations using SEC filings, hybrid retrieval, LangGraph, numerical validation, and human review.">
+  <meta name="theme-color" content="#176d68">
+  <meta property="og:title" content="FinSight AI | Gowtham K">
+  <meta property="og:description" content="A production-oriented financial-document intelligence system with grounded answers, numerical validation, and human approval controls.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gowthamkondabolu.github.io/finsight-ai.html">
+  <meta property="og:image" content="https://gowthamkondabolu.github.io/portfolio-preview.jpg?v=2">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FinSight AI | Gowtham K">
+  <meta name="twitter:description" content="Evidence-grounded financial-risk investigations built from public SEC filings.">
+  <meta name="twitter:image" content="https://gowthamkondabolu.github.io/portfolio-preview.jpg?v=2">
+  <title>FinSight AI | Gowtham K</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="case-study-page">
+<main class="case-main" id="top">
+  <header class="topbar case-topbar">
+    <a class="identity" href="index.html" aria-label="Return to Gowtham K portfolio"><span class="identity-mark">GK</span><span><b>Gowtham K</b><small>Data Scientist · ML Engineer</small></span></a>
+    <nav aria-label="Case study navigation"><a href="index.html#work">← Projects</a><a href="#architecture">Architecture</a><a href="#stack">Stack</a></nav>
+    <a class="contact-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gowtham96512@gmail.com&amp;su=FinSight%20AI%20Inquiry" target="_blank" rel="noreferrer" aria-label="Email Gowtham using Gmail"><span class="status-dot"></span>Available to connect <b>↗</b></a>
+  </header>
+
+  <section class="case-hero wrap">
+    <div class="case-hero-copy">
+      <p class="case-badge"><i></i>Independent AI engineering project · 2026</p>
+      <h1>Financial research,<br><em>grounded</em> in evidence.</h1>
+      <p class="case-lede">FinSight AI is a production-oriented research assistant for investigating company risks, financial trends, and regulatory disclosures using traceable evidence from public SEC filings.</p>
+      <div class="case-actions">
+        <a class="button primary" href="https://github.com/GowthamKondabolu/finsight-ai" target="_blank" rel="noreferrer">View source <span>↗</span></a>
+        <a class="button" href="https://github.com/GowthamKondabolu/finsight-ai/blob/main/docs/aws_deployment.md" target="_blank" rel="noreferrer">Deployment design <span>↗</span></a>
+      </div>
+      <div class="case-status-note"><b>CURRENT STATUS</b><span>AWS deployment architecture is implemented and validated in CI. Operational evidence capture is the next milestone; no continuously running AWS environment is claimed.</span></div>
+    </div>
+
+    <div class="case-system" aria-label="FinSight AI system map">
+      <div class="system-stack">
+        <div class="system-stage wide"><span>01 / INGEST</span><b>SEC filings + company facts</b><small>Policy-aware collection, deterministic parsing, provenance, and exact financial observations.</small></div>
+        <div class="system-stage"><span>02 / RETRIEVE</span><b>Hybrid evidence search</b><small>PostgreSQL full-text search, pgvector, metadata filters, and transparent reranking.</small></div>
+        <div class="system-stage"><span>03 / INVESTIGATE</span><b>Agentic workflow</b><small>LangGraph orchestration with durable checkpoints and read-only evidence tools.</small></div>
+        <div class="system-stage wide review"><span>04 / VERIFY + REVIEW</span><b>Citations, calculations, and human approval</b><small>Strict structured outputs reject invented evidence, validate decimal math, and interrupt before release.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section alt">
+    <div class="wrap">
+      <div class="case-section-heading"><p class="kicker">01 / ENGINEERING APPROACH</p><h2>Built for <em>traceability,</em> not just fluent answers.</h2><p>Financial-document research needs more than retrieval and generation. FinSight connects each answer to source evidence, checks numerical claims, records workflow state, and makes review an explicit release control.</p></div>
+      <div class="case-grid">
+        <article class="case-card"><span>01 / EVIDENCE</span><h3>Citation-complete retrieval</h3><p>Every retrieval result retains filing, section, date, rank, score, and source identity. Application-rendered citations reject evidence IDs the model did not receive.</p></article>
+        <article class="case-card"><span>02 / VALIDATION</span><h3>Exact financial arithmetic</h3><p>SEC company facts are stored as exact decimals. Failed calculations are excluded from answer text and escalated for review instead of being presented as facts.</p></article>
+        <article class="case-card"><span>03 / CONTROL</span><h3>Human approval by design</h3><p>The LangGraph workflow pauses at a mandatory review interrupt and records attributable approve-or-reject decisions before an answer can be released.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section wrap" id="architecture">
+    <div class="case-section-heading"><p class="kicker">02 / ARCHITECTURE</p><h2>One system, from filing to <em>reviewed response.</em></h2><p>The implementation covers the complete investigation path, with evaluation, observability, and deployment controls treated as first-class engineering work.</p></div>
+    <div class="architecture-list">
+      <div class="architecture-row"><div class="architecture-label">Source + provenance</div><div><h3>Policy-compliant SEC ingestion</h3><p>Identifiable user agent, bounded retries, request pacing, document hashes, stable sections, token offsets, and idempotent persistence.</p></div></div>
+      <div class="architecture-row"><div class="architecture-label">Retrieval</div><div><h3>Vector and keyword evidence channels</h3><p>pgvector cosine search and PostgreSQL full-text candidates are combined with weighted reciprocal-rank fusion and issuer-aware filters.</p></div></div>
+      <div class="architecture-row"><div class="architecture-label">Orchestration</div><div><h3>Durable LangGraph investigations</h3><p>Typed workflow state, PostgreSQL checkpoints, MCP evidence tools, and resume behavior that does not repeat completed model execution.</p></div></div>
+      <div class="architecture-row"><div class="architecture-label">Safety + evaluation</div><div><h3>Grounding, guardrails, and reproducible experiments</h3><p>Structured outputs, citation and numerical validation, versioned benchmarks, paired statistical analysis, assignment controls, and preregistered outcomes.</p></div></div>
+      <div class="architecture-row"><div class="architecture-label">Delivery</div><div><h3>API, analyst workspace, and telemetry</h3><p>FastAPI services, a Next.js analyst interface, bearer authentication, OpenTelemetry spans and metrics, and credential-redacted structured logs.</p></div></div>
+    </div>
+  </section>
+
+  <section class="case-section alt" id="stack">
+    <div class="wrap">
+      <div class="case-section-heading"><p class="kicker">03 / STACK + DEPLOYMENT</p><h2>Production-oriented from <em>code to cloud.</em></h2><p>The local and cloud paths use the same containerized application boundaries, with infrastructure reviewed as code and deployment separated from permanent hosting.</p></div>
+      <div class="stack-cloud-grid">
+        <article class="stack-panel">
+          <h3>Core technology</h3>
+          <div class="stack-tags"><span>Python 3.12</span><span>FastAPI</span><span>Pydantic</span><span>LangGraph</span><span>MCP</span><span>PostgreSQL 17</span><span>pgvector</span><span>OpenAI Responses</span><span>Next.js 16</span><span>React 19</span><span>OpenTelemetry</span><span>Docker</span><span>Terraform</span><span>GitHub Actions</span></div>
+        </article>
+        <article class="cloud-panel">
+          <div class="cloud-status"><i></i>AWS-ready · evidence capture pending</div>
+          <h3>Auditable AWS staging profile</h3>
+          <p>Terraform defines a two-AZ VPC, private ECS Fargate services, encrypted RDS PostgreSQL, ECR, CloudFront HTTPS, Secrets Manager, alarms, and short-lived GitHub OIDC credentials.</p>
+          <p>The recording profile includes an explicit confirmation gate, ECR cleanup, same-day destruction, resource inventory, and empty-state verification to control cost.</p>
+          <a href="https://github.com/GowthamKondabolu/finsight-ai/tree/main/infrastructure/terraform" target="_blank" rel="noreferrer">Inspect Terraform ↗</a>
+        </article>
+      </div>
+      <p class="case-disclaimer">FinSight AI is an independent educational project. It does not provide investment, legal, accounting, or financial advice. The interface and repository distinguish fixtures from live evidence and do not claim a continuously available AWS deployment.</p>
+    </div>
+  </section>
+
+  <footer class="case-footer">
+    <div class="wrap footer-inner">
+      <p class="kicker">EXPLORE THE IMPLEMENTATION</p>
+      <div class="footer-title"><h2>Review FinSight<br>on GitHub.</h2><a class="footer-arrow" href="https://github.com/GowthamKondabolu/finsight-ai" target="_blank" rel="noreferrer" aria-label="Open FinSight AI source code on GitHub">↗</a></div>
+      <a class="email" href="index.html#work">← Return to selected work</a>
+      <div class="footer-row"><span>© 2026 GOWTHAM K</span><div><a href="https://www.linkedin.com/in/gowtham512/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="Gowtham_K_Resume.pdf" download>RÉSUMÉ ↓</a></div><a href="#top">BACK TO TOP ↑</a></div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
