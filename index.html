@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Gowtham K, a Data Scientist and Machine Learning Engineer building production-ready predictive systems.">
+  <meta name="description" content="Portfolio of Gowtham K, a Data Scientist and Machine Learning Engineer building explainable AI and ML decision-support systems for regulated industries.">
   <meta name="theme-color" content="#675bf5">
   <meta property="og:title" content="Gowtham K | Data Scientist & Machine Learning Engineer">
-  <meta property="og:description" content="Production ML, predictive systems, and analytics across healthcare and financial services.">
+  <meta property="og:description" content="Explainable AI, production ML, and decision-support systems across healthcare and financial services.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gowthamkondabolu.github.io/">
   <meta property="og:image" content="https://gowthamkondabolu.github.io/portfolio-preview.jpg?v=2">
@@ -17,7 +17,7 @@
   <meta property="og:image:alt" content="Gowtham K — Data Scientist and Machine Learning Engineer portfolio">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Gowtham K | Data Scientist & Machine Learning Engineer">
-  <meta name="twitter:description" content="Production ML, predictive systems, and analytics across healthcare and financial services.">
+  <meta name="twitter:description" content="Explainable AI, production ML, and decision-support systems across healthcare and financial services.">
   <meta name="twitter:image" content="https://gowthamkondabolu.github.io/portfolio-preview.jpg?v=2">
   <title>Gowtham K | Data Scientist & Machine Learning Engineer</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -35,7 +35,7 @@
     <div class="hero-copy">
       <p class="overline"><span>PORTFOLIO / 2026</span><i></i>Healthcare + Financial Services</p>
       <h1>Data systems,<br><em>designed</em> for decisions.</h1>
-      <p class="hero-lede">I’m Gowtham, a Data Scientist and Machine Learning Engineer turning complex data into dependable products, clear insights, and measurable business outcomes.</p>
+      <p class="hero-lede">I’m Gowtham, a Data Scientist and Machine Learning Engineer building explainable AI and ML decision-support systems for regulated industries.</p>
       <div class="hero-actions">
         <a class="button primary" href="Gowtham_K_Resume.pdf" download>Download résumé <span>↓</span></a>
         <a class="button linkedin" href="https://www.linkedin.com/in/gowtham512/" target="_blank" rel="noreferrer"><span class="in-badge">in</span> LinkedIn <b>↗</b></a>
@@ -91,14 +91,40 @@
         </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-visual finance-visual" aria-hidden="true"><div class="visual-bar"><span>DS / 02</span><span>FINANCIAL ANALYTICS</span></div><div class="donut"><b>35%</b><span>faster</span></div><div class="bar-field"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-        <div class="project-copy compact-copy"><div class="project-meta"><span>DECISION SYSTEMS</span><span>CASE 02</span></div><h3>Analytics that kept pace with the business.</h3><p>Optimized data pipelines, automated reporting, and accelerated forecasting while strengthening model monitoring and data quality.</p><div class="tech-row"><span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span><span>MLflow</span></div></div>
+      <article class="project-card project-featured finsight-card">
+        <div class="project-visual finsight-visual" aria-hidden="true">
+          <div class="visual-bar"><span>AI / 02</span><span>FINANCIAL INTELLIGENCE</span></div>
+          <div class="finsight-flow">
+            <div class="finsight-node source-node"><small>01 / SOURCE</small><b>SEC EDGAR</b><span>Filings + facts</span></div>
+            <div class="finsight-path path-one"><i></i></div>
+            <div class="finsight-node retrieval-node"><small>02 / RETRIEVE</small><b>Hybrid RAG</b><span>pgvector + FTS</span></div>
+            <div class="finsight-path path-two"><i></i></div>
+            <div class="finsight-node agent-node"><small>03 / VERIFY</small><b>Agent review</b><span>Citations + math</span></div>
+          </div>
+          <div class="finsight-controls"><span>Grounded evidence</span><span>Decimal validation</span><span>Human approval</span></div>
+          <div class="finsight-status"><i></i>AWS-ready · evidence capture pending</div>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta"><span>INDEPENDENT AI ENGINEERING PROJECT</span><span>AWS-READY · EVIDENCE PENDING</span></div>
+          <h3>FinSight AI: evidence-grounded financial-risk investigations.</h3>
+          <p>Built a production-oriented research assistant that ingests public SEC filings, combines vector and keyword retrieval, orchestrates investigations with LangGraph, validates citations and calculations, and requires human approval before release.</p>
+          <div class="result-row"><span><b>Evidence-first</b> cited answers</span><span><b>Exact</b> decimal checks</span><span><b>Mandatory</b> human review</span></div>
+          <div class="tech-row"><span>Python</span><span>LangGraph</span><span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span><span>Next.js</span><span>Terraform</span><span>AWS</span></div>
+          <div class="project-actions">
+            <a class="project-link primary" href="finsight-ai.html">Explore project <span>→</span></a>
+            <a class="project-link" href="https://github.com/GowthamKondabolu/finsight-ai" target="_blank" rel="noreferrer">View source <span>↗</span></a>
+          </div>
+        </div>
       </article>
 
       <article class="project-card">
-        <div class="project-visual banking-visual" aria-hidden="true"><div class="visual-bar"><span>DE / 03</span><span>BANKING DATA</span></div><div class="report-count"><b>30+</b><span>AUTOMATED<br>REPORTS</span></div><div class="report-table"><i></i><i></i><i></i><i></i></div></div>
-        <div class="project-copy compact-copy"><div class="project-meta"><span>DATA FOUNDATIONS</span><span>CASE 03</span></div><h3>Trusted reporting at transactional scale.</h3><p>Built large-scale ETL and automated reporting workflows that connected operational data to timely business decisions.</p><div class="tech-row"><span>SQL</span><span>Spark</span><span>Hadoop</span><span>Tableau</span><span>Python</span></div></div>
+        <div class="project-visual finance-visual" aria-hidden="true"><div class="visual-bar"><span>DS / 03</span><span>FINANCIAL ANALYTICS</span></div><div class="donut"><b>35%</b><span>faster</span></div><div class="bar-field"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="project-copy compact-copy"><div class="project-meta"><span>DECISION SYSTEMS</span><span>CASE 03</span></div><h3>Analytics that kept pace with the business.</h3><p>Optimized data pipelines, automated reporting, and accelerated forecasting while strengthening model monitoring and data quality.</p><div class="tech-row"><span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span><span>MLflow</span></div></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual banking-visual" aria-hidden="true"><div class="visual-bar"><span>DE / 04</span><span>BANKING DATA</span></div><div class="report-count"><b>30+</b><span>AUTOMATED<br>REPORTS</span></div><div class="report-table"><i></i><i></i><i></i><i></i></div></div>
+        <div class="project-copy compact-copy"><div class="project-meta"><span>DATA FOUNDATIONS</span><span>CASE 04</span></div><h3>Trusted reporting at transactional scale.</h3><p>Built large-scale ETL and automated reporting workflows that connected operational data to timely business decisions.</p><div class="tech-row"><span>SQL</span><span>Spark</span><span>Hadoop</span><span>Tableau</span><span>Python</span></div></div>
       </article>
     </div>
   </section>
